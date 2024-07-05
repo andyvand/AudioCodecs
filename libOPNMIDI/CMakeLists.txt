@@ -8,6 +8,7 @@ include(CheckCXXCompilerFlag)
 set(CMAKE_C_STANDARD 90)
 # Prefer C++98 standard
 set(CMAKE_CXX_STANDARD 98)
+set(CMAKE_ASM-ATT_COMPILE_OBJECT "${CMAKE_C_COMPILER} -c")
 
 if(MSVC)
     check_cxx_compiler_flag("/std:c++14" COMPILER_SUPPORTS_CXX14)
